@@ -1,0 +1,422 @@
+[
+    {
+        "title": "Tsmixer: Lightweight mlp-mixer model for multivariate time series forecasting",
+        "authors": "Ekambaram, Vijay and Jati, Arindam and Nguyen, Nam and Sinthong, Phanwadee and Kalagnanam, Jayant",
+        "year": "2023",
+        "abstract": "Transformers have gained popularity in time series forecasting for their ability to capture long-sequence interactions. However, high memory and computing requirements pose a critical bottleneck long-term forecasting. To address this, we propose TSMixer, lightweight neural architecture exclusively composed of multi-layer perceptron (MLP) modules multivariate representation learning on patched series. Inspired by MLP-Mixer's success computer vision, adapt it series, addressing challenges introducing validated components enhanced accuracy. This includes novel design paradigm attaching online reconciliation heads the MLP-Mixer backbone, explicitly modeling time-series properties such as hierarchy channel-correlations. We also Hybrid channel infusion simple gating approach effectively handle noisy interactions generalization across diverse datasets. By incorporating these components, significantly enhance capability MLP structures, outperforming complex Transformer models with minimal usage. Moreover, TSMixer's modular enables compatibility both supervised masked self-supervised methods, making promising building block Foundation Models. TSMixer outperforms state-of-the-art considerable margin 8-60%. It latest strong benchmarks Patch-Transformer (by 1-2%) significant reduction runtime (2-3X). The source code our model is officially released PatchTSMixer HuggingFace. Model: https://huggingface.co/docs/transformers/main/en/model_doc/patchtsmixer Examples: https://github.com/ibm/tsfm/#notebooks-links",
+        "source": "Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+    },
+    {
+        "title": "Are transformers effective for time series forecasting?",
+        "authors": "Zeng, Ailing and Chen, Muxi and Zhang, Lei and Xu, Qiang",
+        "year": "2023",
+        "abstract": "Recently, there has been a surge of Transformer-based solutions for the long-term time series forecasting (LTSF) task. Despite growing performance over past few years, we question validity this line research in work. Specifically, Transformers is arguably most successful solution to extract semantic correlations among elements long sequence. However, modeling, are temporal relations an ordered set continuous points. While employing positional encoding and using tokens embed sub-series facilitate preserving some ordering information, nature permutation-invariant self-attention mechanism inevitably results information loss. To validate our claim, introduce embarrassingly simple one-layer linear models named LTSF-Linear comparison. Experimental on nine real-life datasets show that surprisingly outperforms existing sophisticated LTSF all cases, often by large margin. Moreover, conduct comprehensive empirical studies explore impacts various design their relation extraction capability. We hope surprising finding opens up new directions also advocate revisiting other analysis tasks (e.g., anomaly detection) future.",
+        "source": "Proceedings of the AAAI conference on artificial intelligence"
+    },
+    {
+        "title": "Time series analysis: forecasting and control",
+        "authors": "Box, George EP and Jenkins, Gwilym M and Reinsel, Gregory C and Ljung, Greta M",
+        "year": "2015",
+        "abstract": "",
+        "source": "Unknown"
+    },
+    {
+        "title": "Crossformer: Transformer utilizing cross-dimension dependency for multivariate time series forecasting",
+        "authors": "Zhang, Yunhao and Yan, Junchi",
+        "year": "2023",
+        "abstract": "",
+        "source": "The eleventh international conference on learning representations"
+    },
+    {
+        "title": "Stock prediction based on technical indicators using deep learning model.",
+        "authors": "Agrawal, Manish and Shukla, Piyush Kumar and Nair, Rajit and Nayyar, Anand and Masud, Mehedi",
+        "year": "2022",
+        "abstract": "Stock market trends forecast is one of the most current topics and a significant research challenge due to its dynamic unstable nature. The stock data usually non-stationary, attributes are non-correlative each other. Several traditional Technical Indicators (STIs) may incorrectly predict trends. To study characteristics using STIs make efficient trading decisions, robust model built. This paper aims build up an Evolutionary Deep Learning Model (EDLM) identify trends’ prices by STIs. proposed has implemented (DL) establish concept Correlation-Tensor. analysis dataset three popular banking organizations obtained from live based on National exchange (NSE) – India, Long Short Term Memory (LSTM) used. datasets encompassed days 17 Nov 2008 15 2018. work also conducted exhaustive experiments correlation various with price built EDLM shown improvements over two benchmark ML models deep learning one. aids investors in making profitable investment decisions as it presents trend-based forecasting achieved prediction accuracy 63.59%, 56.25%, 57.95% HDFC, Yes Bank, SBI, respectively. Results indicate that EDLA combination can often provide improved results than other state-of-the-art algorithms.",
+        "source": "Computers, Materials \\& Continua"
+    },
+    {
+        "title": "Enhancing the locality and breaking the memory bottleneck of transformer on time series forecasting",
+        "authors": "Li, Shiyang and Jin, Xiaoyong and Xuan, Yao and Zhou, Xiyou and Chen, Wenhu and Wang, Yu-Xiang and Yan, Xifeng",
+        "year": "2019",
+        "abstract": "Time series forecasting is an important problem across many domains, including predictions of solar plant energy output, electricity consumption, and traffic jam situation. In this paper, we propose to tackle such with Transformer [1]. Although impressed by its performance in our preliminary study, found two major weaknesses: (1) locality-agnostics: the point-wise dot-product self-attention canonical architecture insensitive local context, which can make model prone anomalies time series; (2) memory bottleneck: space complexity grows quadratically sequence length $L$, making directly modeling long infeasible. order solve these issues, first convolutional producing queries keys causal convolution so that context be better incorporated into attention mechanism. Then, LogSparse only $O(L(\\log L)^{2})$ cost, improving accuracy for fine granularity strong long-term dependencies under constrained budget. Our experiments on both synthetic data real-world datasets show it compares favorably state-of-the-art.",
+        "source": "Advances in neural information processing systems"
+    },
+    {
+        "title": "Informer: Beyond efficient transformer for long sequence time-series forecasting",
+        "authors": "Zhou, Haoyi and Zhang, Shanghang and Peng, Jieqi and Zhang, Shuai and Li, Jianxin and Xiong, Hui and Zhang, Wancai",
+        "year": "2021",
+        "abstract": "Many real-world applications require the prediction of long sequence time-series, such as electricity consumption planning. Long time-series forecasting (LSTF) demands a high capacity model, which is ability to capture precise long-range dependency coupling between output and input efficiently. Recent studies have shown potential Transformer increase capacity. However, there are several severe issues with that prevent it from being directly applicable LSTF, including quadratic time complexity, memory usage, inherent limitation encoder-decoder architecture. To address these issues, we design an efficient transformer-based model for named Informer, three distinctive characteristics: (i) ProbSparse self-attention mechanism, achieves O(L log L) in complexity has comparable performance on sequences' alignment. (ii) distilling highlights dominating attention by halving cascading layer input, efficiently handles extreme sequences. (iii) generative style decoder, while conceptually simple, predicts sequences at one forward operation rather than step-by-step way, drastically improves inference speed long-sequence predictions. Extensive experiments four large-scale datasets demonstrate Informer significantly outperforms existing methods provides new solution LSTF problem.",
+        "source": "Proceedings of the AAAI conference on artificial intelligence"
+    },
+    {
+        "title": "Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting",
+        "authors": "Wu, Haixu and Xu, Jiehui and Wang, Jianmin and Long, Mingsheng",
+        "year": "2021",
+        "abstract": "Extending the forecasting time is a critical demand for real applications, such as extreme weather early warning and long-term energy consumption planning. This paper studies problem of series. Prior Transformer-based models adopt various self-attention mechanisms to discover long-range dependencies. However, intricate temporal patterns future prohibit model from finding reliable Also, Transformers have sparse versions point-wise self-attentions long series efficiency, resulting in information utilization bottleneck. Going beyond Transformers, we design Autoformer novel decomposition architecture with an Auto-Correlation mechanism. We break pre-processing convention renovate it basic inner block deep models. empowers progressive capacities complex Further, inspired by stochastic process theory, mechanism based on periodicity, which conducts dependencies discovery representation aggregation at sub-series level. outperforms both efficiency accuracy. In forecasting, yields state-of-the-art accuracy, 38% relative improvement six benchmarks, covering five practical applications: energy, traffic, economics, disease. Code available this repository: \\url{https://github.com/thuml/Autoformer}.",
+        "source": "Advances in neural information processing systems"
+    },
+    {
+        "title": "Pyraformer: Low-complexity pyramidal attention for long-range time series modeling and forecasting",
+        "authors": "Liu, Shizhan and Yu, Hang and Liao, Cong and Li, Jianguo and Lin, Weiyao and Liu, Alex X and Dustdar, Schahram",
+        "year": "2022",
+        "abstract": "",
+        "source": "\\# PLACEHOLDER\\_PARENT\\_METADATA\\_VALUE\\#"
+    },
+    {
+        "title": "Swin transformer: Hierarchical vision transformer using shifted windows",
+        "authors": "Liu, Ze and Lin, Yutong and Cao, Yue and Hu, Han and Wei, Yixuan and Zhang, Zheng and Lin, Stephen and Guo, Baining",
+        "year": "2021",
+        "abstract": "This paper presents a new vision Transformer, called Swin that capably serves as general-purpose backbone for computer vision. Challenges in adapting Transformer from language to arise differences between the two domains, such large variations scale of visual entities and high resolution pixels images compared words text. To address these differences, we propose hierarchical whose representation is computed with Shifted windows. The shifted windowing scheme brings greater efficiency by limiting self-attention computation non-overlapping local windows while also allowing cross-window connection. architecture has flexibility model at various scales linear computational complexity respect image size. These qualities make it compatible broad range tasks, including classification (87.3 top-1 accuracy on ImageNet-1K) dense prediction tasks object detection (58.7 box AP 51.1 mask COCO test-dev) semantic segmentation (53.5 mIoU ADE20K val). Its performance surpasses previous state-of-the-art margin +2.7 +2.6 COCO, +3.2 ADE20K, demonstrating potential Transformer-based models backbones. design window approach prove beneficial all-MLP architectures. code are publicly available https://github.com/microsoft/Swin-Transformer.",
+        "source": "Proceedings of the IEEE/CVF international conference on computer vision"
+    },
+    {
+        "title": "Fedformer: Frequency enhanced decomposed transformer for long-term series forecasting",
+        "authors": "Zhou, Tian and Ma, Ziqing and Wen, Qingsong and Wang, Xue and Sun, Liang and Jin, Rong",
+        "year": "2022",
+        "abstract": "Although Transformer-based methods have significantly improved state-of-the-art results for long-term series forecasting, they are not only computationally expensive but more importantly, unable to capture the global view of time (e.g. overall trend). To address these problems, we propose combine Transformer with seasonal-trend decomposition method, in which method captures profile while Transformers detailed structures. further enhance performance prediction, exploit fact that most tend a sparse representation well-known basis such as Fourier transform, and develop frequency enhanced Transformer. Besides being effective, proposed termed Frequency Enhanced Decomposed ({\\bf FEDformer}), is efficient than standard linear complexity sequence length. Our empirical studies six benchmark datasets show compared methods, FEDformer can reduce prediction error by $14.8\\%$ $22.6\\%$ multivariate univariate series, respectively. Code publicly available at https://github.com/MAZiqing/FEDformer.",
+        "source": "International conference on machine learning"
+    },
+    {
+        "title": "Preformer: predictive transformer with multi-scale segment-wise correlations for long-term time series forecasting",
+        "authors": "Du, Dazhao and Su, Bing and Wei, Zhewei",
+        "year": "2023",
+        "abstract": "In long-term time series forecasting, most Transformer-based methods adopt the standard point-wise attention mechanism, which not only has high complexity but also cannot explicitly capture predictive dependencies from contexts since corresponding key and value are transformed same point. This paper proposes a model called Preformer. Preformer introduces novel efficient Multi-Scale Segment-Correlation mechanism that divides into segments utilizes segment-wise correlation-based to replace attention. A multi-scale structure is developed aggregate at different temporal scales facilitate selection of segment length. further designs paradigm for decoding, where come two successive rather than segment. Experiments demonstrate outperforms other models. The codes available https://github.com/ddz16/Preformer.",
+        "source": "ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+    },
+    {
+        "title": "A time series is worth 64 words: Long-term forecasting with transformers",
+        "authors": "Nie, Yuqi and Nguyen, Nam H and Sinthong, Phanwadee and Kalagnanam, Jayant",
+        "year": "2022",
+        "abstract": "We propose an efficient design of Transformer-based models for multivariate time series forecasting and self-supervised representation learning. It is based on two key components: (i) segmentation into subseries-level patches which are served as input tokens to Transformer; (ii) channel-independence where each channel contains a single univariate that shares the same embedding Transformer weights across all series. Patching naturally has three-fold benefit: local semantic information retained in embedding; computation memory usage attention maps quadratically reduced given look-back window; model can attend longer history. Our channel-independent patch (PatchTST) improve long-term accuracy significantly when compared with SOTA models. also apply our pre-training tasks attain excellent fine-tuning performance, outperforms supervised training large datasets. Transferring masked pre-trained one dataset others produces accuracy. Code available at: https://github.com/yuqinie98/PatchTST.",
+        "source": "arXiv preprint arXiv:2211.14730"
+    },
+    {
+        "title": "itransformer: Inverted transformers are effective for time series forecasting",
+        "authors": "Liu, Yong and Hu, Tengge and Zhang, Haoran and Wu, Haixu and Wang, Shiyu and Ma, Lintao and Long, Mingsheng",
+        "year": "2023",
+        "abstract": "The recent boom of linear forecasting models questions the ongoing passion for architectural modifications Transformer-based forecasters. These forecasters leverage Transformers to model global dependencies over temporal tokens time series, with each token formed by multiple variates same timestamp. However, are challenged in series larger lookback windows due performance degradation and computation explosion. Besides, embedding fuses that represent potential delayed events distinct physical measurements, which may fail learning variate-centric representations result meaningless attention maps. In this work, we reflect on competent duties Transformer components repurpose architecture without any modification basic components. We propose iTransformer simply applies feed-forward network inverted dimensions. Specifically, points individual embedded into variate utilized mechanism capture multivariate correlations; meanwhile, is applied learn nonlinear representations. achieves state-of-the-art challenging real-world datasets, further empowers family promoted performance, generalization ability across different variates, better utilization arbitrary windows, making it a nice alternative as fundamental backbone forecasting. Code available at repository: https://github.com/thuml/iTransformer.",
+        "source": "arXiv preprint arXiv:2310.06625"
+    },
+    {
+        "title": "The capacity and robustness trade-off: Revisiting the channel independent strategy for multivariate time series forecasting",
+        "authors": "Han, Lu and Ye, Han-Jia and Zhan, De-Chuan",
+        "year": "2024",
+        "abstract": "Multivariate time series data comprises various channels of variables. The multivariate forecasting models need to capture the relationship between accurately predict future values. However, recently, there has been an emergence methods that employ Channel Independent (CI) strategy. These view as separate univariate and disregard correlation channels. Surprisingly, our empirical results have shown trained with CI strategy outperform those Dependent (CD) strategy, usually by a significant margin. Nevertheless, reasons behind this phenomenon not yet thoroughly explored in literature. This paper provides comprehensive theoretical analyses characteristics datasets CI/CD Our conclude CD approach higher capacity but often lacks robustness distributionally drifted series. In contrast, trades for robust prediction. Practical measures inspired these are proposed address dilemma, including modified method called Predict Residuals Regularization (PRReg) can surpass We hope findings raise awareness among researchers about inspire construction better models.",
+        "source": "IEEE Transactions on Knowledge and Data Engineering"
+    },
+    {
+        "title": "Temporal and heterogeneous graph neural network for financial time series prediction",
+        "authors": "Xiang, Sheng and Cheng, Dawei and Shang, Chencheng and Zhang, Ying and Liang, Yuqi",
+        "year": "2022",
+        "abstract": "The price movement prediction of stock market has been a classical yet challenging problem, with the attention both economists and computer scientists. In recent years, graph neural network significantly improved performance by employing deep learning on company relations. However, existing relation graphs are usually constructed handcraft human labeling or nature language processing, which suffering from heavy resource requirement low accuracy. Besides, they cannot effectively response to dynamic changes in graphs. Therefore, this paper, we propose temporal heterogeneous network-based (THGNN) approach learn relations among movements financial time series. particular, first generate for each trading day according their historic price. Then leverage transformer encoder encode information into representations. Afterward, jointly optimize embeddings series data infer probability target movements. Finally, conduct extensive experiments United States China. results demonstrate effectiveness superior our proposed methods compared state-of-the-art baselines. Moreover, also deploy THGNN real-world quantitative algorithm system, accumulated portfolio return obtained method outperforms other",
+        "source": "Proceedings of the 31st ACM international conference on information \\& knowledge management"
+    },
+    {
+        "title": "Multilayer feedforward networks are universal approximators",
+        "authors": "Hornik, Kurt and Stinchcombe, Maxwell and White, Halbert",
+        "year": "1989",
+        "abstract": "",
+        "source": "Neural networks"
+    },
+    {
+        "title": "Long Short-term Memory",
+        "authors": "Hochreiter, S",
+        "year": "1997",
+        "abstract": "Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis this problem, then address it introducing novel, efficient, gradient based method called short-term memory (LSTM). Truncating the where does not do harm, LSTM can learn bridge minimal lags in excess 1000 discrete-time steps enforcing constant flow through carousels within special units. Multiplicative gate units open and close access flow. is local space time; its computational complexity per step weight O. 1. Our experiments with artificial data involve local, distributed, real-valued, noisy pattern representations. In comparisons real-time learning, back propagation cascade correlation, Elman nets, neural sequence chunking, leads many more successful runs, learns much faster. also solves complex, long-time-lag tasks that have never been solved previous network algorithms.",
+        "source": "Neural Computation MIT-Press"
+    },
+    {
+        "title": "Attention is all you need",
+        "authors": "Vaswani, A",
+        "year": "2017",
+        "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. best performing also connect the encoder and decoder through attention mechanism. We propose a new simple network architecture, Transformer, solely mechanisms, dispensing with recurrence convolutions entirely. Experiments two machine translation tasks show these to be superior quality while being more parallelizable requiring significantly less time train. Our model achieves 28.4 BLEU WMT 2014 English-to-German task, improving over existing results, including ensembles by 2 BLEU. On English-to-French our establishes single-model state-of-the-art score of 41.8 after training for 3.5 days eight GPUs, small fraction costs from literature. that Transformer generalizes well other applying it successfully English constituency parsing both large limited data.",
+        "source": "Advances in Neural Information Processing Systems"
+    },
+    {
+        "title": "Gaussian error linear units (gelus)",
+        "authors": "Hendrycks, Dan and Gimpel, Kevin",
+        "year": "2016",
+        "abstract": "",
+        "source": "arXiv preprint arXiv:1606.08415"
+    },
+    {
+        "title": "Graph attention networks",
+        "authors": "Veli{\\v{c}}kovi{\\'c}, Petar and Cucurull, Guillem and Casanova, Arantxa and Romero, Adriana and Lio, Pietro and Bengio, Yoshua",
+        "year": "2017",
+        "abstract": "We present graph attention networks (GATs), novel neural network architectures that operate on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based convolutions or their approximations. By stacking in which nodes are able attend over neighborhoods' features, we enable (implicitly) specifying different weights a neighborhood, without requiring any kind costly matrix operation (such as inversion) depending knowing structure upfront. In this way, several key challenges spectral-based simultaneously, and make our model readily applicable inductive well transductive problems. Our GAT models have achieved matched state-of-the-art results across four established benchmarks: Cora, Citeseer Pubmed citation datasets, protein-protein interaction dataset (wherein test graphs remain unseen during training).",
+        "source": "arXiv preprint arXiv:1710.10903"
+    },
+    {
+        "title": "ImputeFormer: Low rankness-induced transformers for generalizable spatiotemporal imputation",
+        "authors": "Nie, Tong and Qin, Guoyang and Ma, Wei and Mei, Yuewen and Sun, Jian",
+        "year": "2024",
+        "abstract": "Missing data is a pervasive issue in both scientific and engineering tasks, especially for the modeling of spatiotemporal data. Existing imputation solutions mainly include low-rank models deep learning models. The former assumes general structural priors but has limited model capacity. latter possesses salient expressivity, lacks prior knowledge underlying structures. Leveraging strengths two paradigms, we demonstrate low rankness-induced Transformer to achieve balance between strong inductive bias high expressivity. exploitation inherent structures enables our learn balanced signal-noise representations, making it generalizable variety tasks. We its superiority terms accuracy, efficiency, versatility heterogeneous datasets, including traffic flow, solar energy, smart meters, air quality. Promising empirical results provide conviction that incorporating time series primitives, such as low-rankness, can substantially facilitate development approach wide range problems.",
+        "source": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+    },
+    {
+        "title": "Learning phrase representations using RNN encoder-decoder for statistical machine translation",
+        "authors": "Cho, Kyunghyun and Van Merri{\\\"e}nboer, Bart and Gulcehre, Caglar and Bahdanau, Dzmitry and Bougares, Fethi and Schwenk, Holger and Bengio, Yoshua",
+        "year": "2014",
+        "abstract": "Kyunghyun Cho, Bart van Merriënboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, Yoshua Bengio. Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2014.",
+        "source": "arXiv preprint arXiv:1406.1078"
+    },
+    {
+        "title": "Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting",
+        "authors": "Yu, Bing and Yin, Haoteng and Zhu, Zhanxing",
+        "year": "2017",
+        "abstract": "Timely accurate traffic forecast is crucial for urban control and guidance. Due to the high nonlinearity complexity of flow, traditional methods cannot satisfy requirements mid-and-long term prediction tasks often neglect spatial temporal dependencies. In this paper, we propose a novel deep learning framework, Spatio-Temporal Graph Convolutional Networks (STGCN), tackle time series problem in domain. Instead applying regular convolutional recurrent units, formulate on graphs build model with complete structures, which enable much faster training speed fewer parameters. Experiments show that our STGCN effectively captures comprehensive spatio-temporal correlations through modeling multi-scale networks consistently outperforms state-of-the-art baselines various real-world datasets.",
+        "source": "arXiv preprint arXiv:1709.04875"
+    },
+    {
+        "title": "QuLTSF: Long-Term Time Series Forecasting with Quantum Machine Learning",
+        "year": 2024,
+        "abstract": "Long-term time series forecasting (LTSF) involves predicting a large number of future values based on the past and is an essential task in wide range domains including weather forecasting, stock market analysis, disease outbreak prediction. Over decades LTSF algorithms have transitioned from statistical models to deep learning like transformer models. Despite complex architecture `Are Transformers Effective for Time Series Forecasting? (Zeng et al., 2023)' showed that simple linear can outperform state-of-the-art Recently, quantum machine (QML) evolving as domain enhance capabilities classical In this paper we initiate application QML problems by proposing QuLTSF, hybrid model multivariate LTSF. Through extensive experiments widely used dataset show advantages QuLTSF over models, terms reduced mean squared error absolute error.",
+        "source": "arXiv (Cornell University)"
+    },
+    {
+        "title": "Application of Artificial Neural Networks for Power Load Prediction in Critical Infrastructure: A Comparative Case Study",
+        "year": 2023,
+        "abstract": "This article aims to assess the effectiveness of state-of-the-art artificial neural network (ANN) models in time series analysis, specifically focusing on their application prediction tasks critical infrastructures (CIs). To accomplish this, shallow with nearly identical numbers trainable parameters are constructed and examined. The dataset, which includes 120,884 hourly electricity consumption records, is divided into three subsets (25%, 50%, entire dataset) examine effect increasing training data. Additionally, same trained evaluated for univariable multivariable data evaluate impact including more features. case study focuses predicting using load information from Norway. results this confirm that LSTM emerge as best-performed model, surpassing other volume feature increase. Notably, datasets ranging 2000 22,000 instances, GRU exhibits superior accuracy, while 42,000 range, BiLSTM best. When dataset within 360,000, ConvLSTM prove be good choices terms accuracy. Convolutional-based exhibit performance computational efficiency. convolutional 1D model emerges a standout choice scenarios where critical, sacrificing only 0.000105 accuracy threefold improvement gained. For lower than 22,000, inclusion does not enhance any ANN model’s performance. In exceeding display no consistent pattern regarding inclusion, though LSTM, Conv1D, Conv2D, ConvLSTM, FCN tend benefit. BiLSTM, GRU, Transformer do benefit regardless size. Moreover, Transformers inefficiency forecasting due permutation-invariant self-attention mechanism, neglecting crucial role sequence order, evidenced by poor across all study. These provide valuable insights capabilities effective usage context CI tasks.",
+        "source": "Applied System Innovation"
+    },
+    {
+        "title": "An Overview Based on the Overall Architecture of Traffic Forecasting",
+        "year": 2024,
+        "abstract": "Abstract With the exponential increase in urban population, transportation systems are confronted with numerous challenges. Traffic congestion is common, traffic accidents happen frequently, and environments deteriorating. To alleviate these issues improve efficiency of transportation, accurate forecasting crucial. In this study, we aim to provide a comprehensive overview overall architecture forecasting, covering aspects such as data analysis, modeling, applications. We begin by introducing existing surveys preliminaries. Next, delve into analysis from collection, formats, characteristics. Additionally, summarize modeling spatial representation, temporal spatio-temporal representation. Furthermore, discuss application including flow speed demand other hybrid forecasting. support future research field, also information on open datasets, source resources, challenges, potential directions. As far know, paper represents first survey that focuses specifically",
+        "source": "Data Science and Engineering"
+    },
+    {
+        "title": "A systematic review for transformer-based long-term series forecasting",
+        "year": 2025,
+        "abstract": "The emergence of deep learning has yielded noteworthy advancements in time series forecasting (TSF). Transformer architectures have witnessed broad utilization and adoption TSF tasks. Transformers proven to be the most successful solution extract semantic correlations among elements within a long sequence. Various variants enabled architecture effectively handle long-term (LTSF) In this article, we first present comprehensive overview their subsequent enhancements developed address various LTSF Then, summarize publicly available datasets relevant evaluation metrics. Furthermore, provide valuable insights into best practices techniques for training context time-series analysis. Lastly, propose potential research directions rapidly evolving field.",
+        "source": "Artificial Intelligence Review"
+    },
+    {
+        "title": "Spatial-Temporal Convolutional Transformer Network for Multivariate Time Series Forecasting",
+        "year": 2022,
+        "abstract": "Multivariate time series forecasting has long been a research hotspot because of its wide range application scenarios. However, the dynamics and multiple patterns spatiotemporal dependencies make this problem challenging. Most existing methods suffer from two major shortcomings: (1) They ignore local context semantics when modeling temporal dependencies. (2) lack ability to capture spatial patterns. To tackle such issues, we propose novel Transformer-based model for multivariate forecasting, called spatial-temporal convolutional Transformer network (STCTN). STCTN mainly consists attention mechanisms respectively Local-range mechanism is proposed in simultaneously focus on both global at sequence level, which addresses first shortcoming. Group-range designed dependency graph as well reduce computation memory complexity, second Continuous positional encoding link historical observations predicted future values encoding, also improves performance. Extensive experiments six real-world datasets show that outperforms start-of-the-art more robust nonsmooth data.",
+        "source": "Sensors"
+    },
+    {
+        "title": "IoT-Based Energy Consumption Prediction Using Transformers",
+        "year": 2024,
+        "abstract": "With the advancement of various IoT-based systems, amount data is steadily increasing. The increase on a daily basis essential for decision-makers to assess current situations and formulate future policies. Among types data, time-series presents challenging relationship between dependencies. Time-series prediction aims forecast values target variables by leveraging insights gained from past points. Recent advancements in deep learning-based algorithms have surpassed traditional machine IoT systems. In this study, we employ Enc &amp;amp; Dec Transformer, latest neural networks problems. obtained results were compared with Encoder-only Decoder-only Transformer blocks as well well-known recurrent based algorithms, including 1D-CNN, RNN, LSTM, GRU. To validate our approach, utilize three different univariate datasets collected an hourly basis, focusing energy consumption within Our demonstrate that proposed model outperforms its counterparts, achieving minimum Mean Squared Error (MSE) 0.020 small, 0.008 medium, 0.006 large-sized datasets.",
+        "source": "Gazi University Journal of Science Part A Engineering and Innovation"
+    },
+    {
+        "title": "FluxFormer: Upscaled global carbon fluxes from eddy covariance data with multivariate timeseries Transformer",
+        "year": 2023,
+        "abstract": "We provided a monthly global gross primary production (GPP) and ecosystem respiration (RECO) dataset from 1990 to 2019 at 0.25° × spatial resolution named FluxFormer by utilizing the new plant function type in combination with multivariate timeseries Transformer-based model. outperforms other satellite-derived upscaled products when comparing correlation site-level seasonal pattern FLUXNET 2015, especially tropical regions. Additionally, our shows highest positive trend GPP 2001 2019, aligning trends derived dynamic vegetation models that account for CO2 fertilization effect. Notably, captures long-term are not replicated some existing products. could be used validate terrestrial biosphere serve asa tool cross-checking datasets. The RECO product is available https://doi.org/10.5281/zenodo.10258644",
+        "source": "EarthArXiv (California Digital Library)"
+    },
+    {
+        "title": "A Softmax-Free Loss Function Based on Predefined Optimal-Distribution of Latent Features for Deep Learning Classifier",
+        "year": 2022,
+        "abstract": "In the field of pattern classification, training deep learning classifiers is mostly end-to-end learning, and loss function constraint on final output (posterior probability) network, so existence Softmax essential. case there usually no effective that completely relies features middle layer to restrict resulting in distribution sample latent not optimal, still room for improvement classification accuracy. Based concept Predefined Evenly-Distributed Class Centroids (PEDCC), this article proposes a Softmax-free based predefined optimal-distribution features-POD Loss. The only restricts samples, including norm-adaptive Cosine distance between feature vector center evenly-distributed class, correlation samples. Finally, used classification. Compared with commonly Loss, some typical related functions PEDCC-Loss, experiments several datasets networks show performance POD Loss always significant better easier converge. Code available https://github.com/TianYuZu/POD-Loss.",
+        "source": "IEEE Transactions on Circuits and Systems for Video Technology"
+    },
+    {
+        "title": "Classification of Deepfake Images Using a Novel Explanatory Hybrid Model",
+        "year": 2023,
+        "abstract": "In court, criminal investigations and identity management tools, like check-in payment logins, face videos, photos, are used as evidence more frequently. Although deeply falsified information may be found using deep learning classifiers, block-box decisionmaking makes forensic investigation in trials challenging. Therefore, the research suggests a three-step classification technique to classify deceptive deepfake image content. The examines visual assessments of an EfficientNet Shifted Window Transformer (SWinT) hybrid model based on Convolutional Neural Network (CNN) architectures. classifier generality is improved first stage different augmentation. Then, developed second step by combining Next, GradCAM approach for assessing human understanding demonstrates interpretation. 14,204 images validation set, there 7,096 fake photos 7,108 real images. contrast focusing only few discrete parts, shows that entire should investigated. On custom dataset real, Generative Adversarial Networks (GAN)-generated, human-altered web proposed method achieves accuracy 98.45%, recall 99.12%, loss 0.11125. successfully distinguishes between manipulated Moreover, presented can assist investigators clarifying composition artificially produced material.",
+        "source": "CommIT (Communication and Information Technology) Journal"
+    },
+    {
+        "title": "Clinical applications of radiomics in non-small cell lung cancer patients with immune checkpoint inhibitor-related pneumonitis",
+        "year": 2023,
+        "abstract": "Immune checkpoint inhibitors (ICIs) modulate the body’s immune function to treat tumors but may also induce pneumonitis. inhibitor-related pneumonitis (ICIP) is a serious immune-related adverse event (irAE). Immunotherapy currently approved as first-line treatment for non-small cell lung cancer (NSCLC), and incidence of ICIP in NSCLC patients can be high 5%-19% clinical practice. severe enough lead death patients, there lack gold standard diagnosis ICIP. Radiomics method that uses computational techniques analyze medical images (e.g., CT, MRI, PET) extract important features from them, which used solve classification regression problems clinic. has been applied predict identify hope transforming qualitative into quantitative ones, thus improving In this review, we summarize pathogenesis process radiomics feature extraction, review application discuss its future prospects.",
+        "source": "Frontiers in Immunology"
+    },
+    {
+        "title": "Survey on Transformer for image classification",
+        "year": 2023,
+        "abstract": "图像分类是图像理解的基础,对计算机视觉在实际中的应用具有重要作用。然而由于图像目标形态、类型的多样性以及成像环境的复杂性,导致很多图像分类方法在实际应用中的分类结果总是差强人意,例如依然存在分类准确性低、假阳性高等问题,严重影响其在后续图像及计算机视觉相关任务中的应用。因此,如何通过后期算法提高图像分类的精度和准确性具有重要研究意义,受到越来越多的关注。随着深度学习技术的快速发展及其在图像处理中的广泛应用和优异表现,基于深度学习技术的图像分类方法研究取得了巨大进展。为了更加全面地对现有方法进行研究,紧跟最新研究进展,本文对 Transformer 驱动的深度学习图像分类方法和模型进行系统梳理和总结。与已有主题相似综述不同,本文重点对 变体驱动的深度学习图像分类方法和模型进行归纳和总结,包括基于可扩展位置编码的 图像分类方法、具有低复杂度和低计算代价的 图像分类方法、局部信息与全局信息融合的 图像分类方法以及基于深层 ViT(visual Transformer)模型的图像分类方法等,从设计思路、结构特点和存在问题等多个维度、多个层面深度分析总结现有方法。为了更好地对不同方法进行比较分析,在 ImageNet、CIFAR-10(Canadian Institute for Advanced Research)和 CIFAR-100 等公开图像分类数据集上,采用准确率、参数量、浮点运算数(floating point operations,FLOPs)、总体分类精度(overall accuracy,OA)、平均分类精度(average accuracy,AA)和 Kappa(κ)系数等评价指标,对不同方法模型的分类性能进行了实验评估。最后,对未来研究方向进行了展望。;Image classification is an important research direction in the field of image processing and computer vision.It aims to identify specific category object has practical application value.However, effect existing methods always unsatisfactory because diversity shape type objects complexity imaging environment.Moreover, problems, such as low accuracy high false positives, seriously affect subsequent vision-related tasks.Therefore, improving through postprocessing algorithms highly desirable.Given wide deep learning techniques, convolutional neural networks generative adversarial networks, natural detection, on techniques received great attention become a hotspot vision recent years.Moreover, many excellent works have been born.As rising star, visual Transformer(ViT)gains increasing interest tasks, particularly its strong ability remote modeling parallel sequence processing.Several technical review articles recently published.Moreover, ViT variants systematically summarized from different angles, tasks introduced.This scenario provides appropriate help people studying tracking progress technology.Compared with traditional network (CNN), achieves global by dividing input into patches.Thus, model greatly improved.However, poor scalability, computational overhead, slow convergence, collapse, still exist problems development technology.These can be solved using tasks.Moreover, reviews that scholars comprehensively understand grasp latest perspective are very few.Therefore, present study compares summarizes based full related ViT.Unlike papers, our work focused at home abroad past 2 years(between January 2021 December 31, 2022).We begin describing basic concept, principle, structure easy understanding.First, we introduce mechanism multihead mechanism.Then, feed-forward position coding described.Finally, presented.Afterward, evolution applications years figured.Then, briefly introduced.Various models described detail according faced ViT.Different solutions, including scalable location coding, complexity, computing cost, local information fusion, model, one one.Experiments ImageNet, Canadian Research(CIFAR-10), provided, evaluations presented demonstrate performance classification.Two indicators adopted, namely, parameter quantity, evaluate experimental results.Floating operation(FLOPs)per second also used analyze comprehensively.Given widely sensing years, analyzes Transformer.The experiments performed hyperspectral datasets Indian Pines, Trento, Salinas classification.Three indicators, overall accuracy(OA), average accuracy(AA), Kappa coefficient, employed this work.Finally, challenges current presented.Future trends prospected.",
+        "source": "Journal of Image and Graphics"
+    },
+    {
+        "title": "Performance Comparison of Deep Learning Models for Damage Identification of Aging Bridges",
+        "year": 2023,
+        "abstract": "Currently, damage in aging bridges is assessed visually, leading to significant personnel, time, and cost expenditures. Moreover, the results depend on subjective judgment of inspector. Machine-learning-based approaches, such as deep learning, can solve these problems. In particular, instance-segmentation models have been used identify different types bridge damage. However, value deep-learning-based identification may be reduced by insufficient training data, class imbalance, model-reliability issues. To overcome limitations, this study utilized photographic data from real bridge-management systems for inspection assessment dataset. Six were considered. performances three representative learning models—Mask R-CNN, BlendMask, SWIN—were compared terms loss–function values. SWIN showed best performance, achieving a loss 0.000005 after 269,939 iterations. This shows that bridge-damage-identification performance maximized setting an appropriate rate using model with minimal value.",
+        "source": "Applied Sciences"
+    },
+    {
+        "title": "A novel multi-scale violence and public gathering dataset for crowd behavior classification",
+        "year": 2024,
+        "abstract": "Dependable utilization of computer vision applications, such as smart surveillance, requires training deep learning networks on datasets that sufficiently represent the classes interest. However, bottleneck in many applications lies limited availability adequate datasets. One particular application is great importance for safety cities and crowded areas surveillance. Conventional surveillance methods are reactive often ineffective enable real-time action. a key component proactive security city. Motivated by city which aims at automatic identification concerning events alerting law-enforcement governmental agencies, we craft large video dataset focuses distinction between small-scale violence, large-scale peaceful gatherings, natural events. This classifies public along two axes, size crowd observed level perceived violence crowd. We name this newly-built Multi-Scale Violence Public Gathering ( MSV-PG ) dataset. The videos go through several pre-processing steps to prepare them be fed into architecture. conduct experiments using ResNet3D, Swin Transformer an R(2 + 1)D results achieved these models when trained dataset, 88.37%, 89.76%, 89.3%, respectively, indicate well-labeled rich enough train diverse scenarios.",
+        "source": "Frontiers in Computer Science"
+    },
+    {
+        "title": "FEDformer-Based Paddy Quality Assessment Model Affected by Toxin Change in Different Storage Environments",
+        "year": 2023,
+        "abstract": "The storage environment can significantly impact paddy quality, which is vital to human health. Changes in cause growth of fungi that affects grain quality. This study analyzed monitoring data from over 20 regions and found five factors are essential predicting quality changes during storage. combined these with the FEDformer (Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting) model k-medoids algorithm construct a change prediction grading evaluation model, showed highest accuracy lowest error results emphasize need controlling preserve ensure food safety.",
+        "source": "Foods"
+    },
+    {
+        "title": "Exploiting Data Science for Measuring the Performance of Technology Stocks",
+        "year": 2023,
+        "abstract": "The rise or fall of the stock markets directly affects investors' interest and loyalty. Therefore, it is necessary to measure performance stocks in market advance prevent our assets from suffering significant losses. In proposed study, six supervised machine learning (ML) strategies deep (DL) models with long short-term memory (LSTM) data science was deployed for thorough analysis measurement technology stocks. Under discussion are Apple Inc. (AAPL), Microsoft Corporation (MSFT), Broadcom Inc., Taiwan Semiconductor Manufacturing Company Limited (TSM), NVIDIA (NVDA), Avigilon (AVGO). datasets were taken Yahoo Finance API 06-05-2005 06-05-2022 (seventeen years) 4280 samples. As already noted, multiple studies have been performed resolve this problem using linear regression, support vector machines, (LSTM), many other models. research, Hidden Markov Model (HMM) outperformed employed ensembles, tree-based models, ARIMA (Auto Regressive Integrated Moving Average) model, a robust mean accuracy score 99.98. Other statistical analyses measurements ensemble algorithms, Long Short-Term Model, also carried out further investigation advanced forecasting time series data. Thus, research found best model be HMM, LSTM second-best that well all aspects. A developed will highly recommended helpful early investment withdrawal based on future creating smart environments.",
+        "source": "Computers, materials & continua/Computers, materials & continua (Print)"
+    },
+    {
+        "title": "Artificial Neural Networks as a means to accommodate decision rules in choice models",
+        "year": 2017,
+        "abstract": "In the past few decades, Artificial Neural Networks (ANNs) have been used to identify and model choice behavior in wide variety of fields (e.g., Bishop, 1995). To give some examples from field travel behavior, ANNs applied commuter mode car ownership Hensher Ton, 2000; Mohammadian & Miller, 2002). aim efficiently recognize patterns data, without being explicitly programmed where look. A key feature lies their capability approximate any Data Generating Process (DGP), provided that sufficient processing units are available; this is known as Universal Approximation Theorem (Hornik et al., 1989). However, despite strong pragmatic appeal ANNs, they criticized for too much ‘data driven’ ‘theory poor’, effect presenting analyst with a black box-model DGP. This limitation has hampered use by discrete modelers researchers. several ways, Discrete Choice Theory (DCT) – which dominant approach research community mirror image ANN. contrast ANN, DCT presupposes particular decision rule (DGP) estimates based on data. addition classical linear-in-parameters utility maximization rule, alternative rules proposed more recently; see Leong (2012) Chorus (2014) overviews. Clear advantages it allows extraction deep behavioral insights data (McFadden, 2001) rigorous conclusions concerning welfare effects policies (Small Rosen, 1981). recent work flexible treatment models Hess 2012; Van Cranenburgh 2015), can still be considered relatively rigid compared Our paper sets out explore depth disadvantages (relative DCT) using ANN framework analyze We focus ANN’s ability learn best represents DGP context. end, we perform three types analyses: analytically what extent applies context, emphasis role size training set number nodes (Vapnik Chervonenkis, 2015). Using synthetic datasets, able explain when underlying analyst. standard Random Utility Maximization Regret Minimization (Chorus, 2010) rules. Particular attention paid error term variance set. real unknown (as usually case). range comparisons made between different DCT-based models. With reference above mentioned analyses, our preliminary results summarized follows: The Out-of-sample analysis shows performance improves increases, approaches whose matches sufficiently large, Figure 1 2 at supplementary files. More specifically, fitted power functions (of form y = a.x^b + c ) reveal asymptotic line theoretical expectations. Furthermore, parameters show converge faster case RUM, RRM. These pave way informed debate about potential limitations predict data; also provide clues how may combined capitalize respective strengths. References: C. M. (1995). networks pattern recognition . Oxford university press. Chorus, C.G. (2010). new Minimization. European Journal Transport Infrastructure Research , 10(2), 181-196 (2014). Capturing models: critical discussion. Chapter 13 (pages 290-310) Hess, S. Daly, A. (Eds.) Handbook Modelling Edward Elgar Hensher, D. A., T. (2000). comparison predictive artificial neural nested logit choice. Transportation Part E 36 (3), 155-172. S., Stathopoulos, (2012). Allowing heterogeneous an four studies. 39 565-591. Hornik, K., Stinchcombe, M., White, H. (1989). Multilayer feedforward universal approximators. (5), 359-366. Leong, W., Embedding heuristics review. Reviews 32 313-331. McFadden, (2001). Economic choices. American Review 91 351-378. Mohammadian, E. (2002). Nested predicting household automobile choices: performance. Record (1807), 92-100. Small, K. (1981). Applied economics Econometrica 105-130. van Cranenburgh, Guevara, G. (2015). New random regret minimization 74 91-109. Vapnik, V. N., Y. On uniform convergence relative frequencies events probabilities. Measures Complexity (pp. 11-30). Springer.",
+        "source": "International Choice Modelling Conference 2017"
+    },
+    {
+        "title": "Physics guided machine learning using simplified theories",
+        "year": 2021,
+        "abstract": "Recent applications of machine learning, in particular deep motivate the need to address generalizability statistical inference approaches physical sciences. In this letter, we introduce a modular physics guided learning framework improve accuracy such data-driven predictive engines. The chief idea our approach is augment knowledge simplified theories with underlying process. To emphasise on their importance, architecture consists adding certain features at intermediate layers rather than input layer. demonstrate approach, select canonical airfoil aerodynamic problem enhancement potential flow theory. We include obtained by panel method that can be computed efficiently for an unseen configuration training procedure. By addressing concerns, results suggest proposed feature effectively used many scientific applications, especially systems where use theoretical, empirical, or model guide module.",
+        "source": "Physics of Fluids"
+    },
+    {
+        "title": "Terrain characterization and classification with a mobile robot",
+        "year": 2006,
+        "abstract": "Abstract This paper introduces novel methods for terrain classification and characterization with a mobile robot. In the context of this paper, aims at associating terrains one few predefined, commonly known categories, such as gravel, sand, or asphalt. Terrain , on other hand, determining key parameters that affect its ability to support vehicular traffic. Such properties are collectively called “trafficability.” The proposed system comprises skid‐steer robot, well some common uncommon but optional onboard sensors. Using these components, our can characterize classify in real time during robot's actual mission. presents experimental results both methods. likely also be implemented tracked robots, although we did not test option work.",
+        "source": "Journal of Field Robotics"
+    },
+    {
+        "title": "Using neural networks to describe tracer correlations",
+        "year": 2004,
+        "abstract": "Abstract. Neural networks are ideally suited to describe the spatial and temporal dependence of tracer-tracer correlations. The neural network performs well even in regions where correlations less compact normally a family correlation curves would be required. For example, CH4-N2O can described using trained with latitude, pressure, time year, CH4 volume mixing ratio (v.m.r.). In this study Quickprop learning one hidden layer eight nodes was able reproduce coefficient between simulated training values 0.9995. Such an accurate representation allows more use made long-term datasets constrain chemical models. as dataset from Halogen Occultation Experiment (HALOE) which has continuously observed (but not N2O) 1991 till present. Fortran code used is available for download.",
+        "source": "Atmospheric chemistry and physics"
+    },
+    {
+        "title": "Long short-term memory recurrent neural network architectures for large scale acoustic modeling",
+        "year": 2014,
+        "abstract": "Long Short-Term Memory (LSTM) is a specific recurrent neural network (RNN) architecture that was designed to model temporal sequences and their long-range dependencies more accurately than conventional RNNs. In this paper, we explore LSTM RNN architectures for large scale acoustic modeling in speech recognition. We recently showed RNNs are effective DNNs modeling, considering moderately-sized models trained on single machine. Here, introduce the first distributed training of using asynchronous stochastic gradient descent optimization cluster machines. show two-layer deep where each layer has linear projection can exceed state-of-the-art recognition performance. This makes use parameters others considered, converges quickly, outperforms feed forward having an order magnitude parameters. Index Terms: Memory, LSTM, network, RNN, recognition, modeling.",
+        "source": "Interspeech 2022"
+    },
+    {
+        "title": "Long Short-Term Memory-Networks for Machine Reading",
+        "year": 2016,
+        "abstract": "In this paper we address the question of how to render sequence-level networks better at handling structured input.We propose a machine reading simulator which processes text incrementally from left right and performs shallow reasoning with memory attention.The reader extends Long Short-Term Memory architecture network in place single cell.This enables adaptive usage during recurrence neural attention, offering way weakly induce relations among tokens.The system is initially designed process sequence but also demonstrate integrate it an encoder-decoder architecture.Experiments on language modeling, sentiment analysis, natural inference show that our model matches or outperforms state art.",
+        "source": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing"
+    },
+    {
+        "title": "Rainfall–runoff modelling using Long Short-Term Memory (LSTM) networks",
+        "year": 2018,
+        "abstract": "Abstract. Rainfall–runoff modelling is one of the key challenges in field hydrology. Various approaches exist, ranging from physically based over conceptual to fully data-driven models. In this paper, we propose a novel approach, using Long Short-Term Memory (LSTM) network, special type recurrent neural network. The advantage LSTM its ability learn long-term dependencies between provided input and output which are essential for storage effects e.g. catchments with snow influence. We use 241 freely available CAMELS data set test our approach also compare results well-known Sacramento Soil Moisture Accounting Model (SAC-SMA) coupled Snow-17 routine. show potential as regional hydrological model predicts discharge variety catchments. last experiment, possibility transfer process understanding, learned at scale, individual thereby increasing performance when compared trained only on single Using were able achieve better SAC-SMA + Snow-17, underlines applications.",
+        "source": "Hydrology and earth system sciences"
+    },
+    {
+        "title": "Attention Is All You Need In Speech Separation",
+        "year": 2021,
+        "abstract": "Recurrent Neural Networks (RNNs) have long been the dominant architecture in sequence-to-sequence learning. RNNs, however, are inherently sequential models that do not allow parallelization of their computations. Transformers emerging as a natural alternative to standard replacing recurrent computations with multi-head attention mechanism.In this paper, we propose SepFormer, novel RNN-free Transformer-based neural network for speech separation. The Sep-Former learns short and long-term dependencies multi-scale approach employs transformers. proposed model achieves state-of-the-art (SOTA) performance on WSJ0-2/3mix datasets. It reaches an SI-SNRi 22.3 dB WSJ0-2mix 19.5 WSJ0-3mix. SepFormer inherits advantages competitive even when downsampling encoded representation by factor 8. is thus significantly faster it less memory-demanding than latest separation systems comparable performance.",
+        "source": "ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+    },
+    {
+        "title": "Channel Attention Is All You Need for Video Frame Interpolation",
+        "year": 2020,
+        "abstract": "Prevailing video frame interpolation techniques rely heavily on optical flow estimation and require additional model complexity computational cost; it is also susceptible to error propagation in challenging scenarios with large motion heavy occlusion. To alleviate the limitation, we propose a simple but effective deep neural network for interpolation, which end-to-end trainable free from component. Our algorithm employs special feature reshaping operation, referred as PixelShuffle, channel attention, replaces computation module. The main idea behind design distribute information map into multiple channels extract by attending pixel-level synthesis. given this principle turns out be presence of We construct comprehensive evaluation benchmark demonstrate that proposed approach achieves outstanding performance compared existing models component computation.",
+        "source": "Proceedings of the AAAI Conference on Artificial Intelligence"
+    },
+    {
+        "title": "Attention is all you need: utilizing attention in AI-enabled drug discovery",
+        "year": 2023,
+        "abstract": "Abstract Recently, attention mechanism and derived models have gained significant traction in drug development due to their outstanding performance interpretability handling complex data structures. This review offers an in-depth exploration of the principles underlying attention-based advantages discovery. We further elaborate on applications various aspects development, from molecular screening target binding property prediction molecule generation. Finally, we discuss current challenges faced application mechanisms Artificial Intelligence technologies, including quality, model computational resource constraints, along with future directions for research. Given accelerating pace technological advancement, believe that will increasingly prominent role anticipate these usher revolutionary breakthroughs pharmaceutical domain, significantly development.",
+        "source": "Briefings in Bioinformatics"
+    },
+    {
+        "title": "Cross-Attention is All You Need: Adapting Pretrained Transformers for Machine Translation",
+        "year": 2021,
+        "abstract": "We study the power of cross-attention in Transformer architecture within context transfer learning for machine translation, and extend findings studies into when training from scratch. conduct a series experiments through fine-tuning translation model on data where either source or target language has changed. These reveal that only parameters is nearly as effective all (i.e., entire model). provide insights why this case observe limiting manner yields cross-lingually aligned embeddings. The implications finding researchers practitioners include mitigation catastrophic forgetting, potential zero-shot ability to models several new pairs with reduced parameter storage overhead.",
+        "source": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing"
+    },
+    {
+        "title": "Yes, \"Attention Is All You Need\", for Exemplar based Colorization",
+        "year": 2021,
+        "abstract": "Conventional exemplar based image colorization tends to transfer colors from reference only grayscale on the semantic correspondence between them. But their practical capabilities are limited when can hardly be found. To overcome this issue, additional information, such as database is normally introduced. However, it's a great challenge consider color information and simultaneously because there lacks unified framework model different multi-modal ambiguity in cannot removed easily. Also, it difficult fuse effectively. Thus, general attention proposed work, where histogram of adopted prior eliminate database. Moreover, sparse loss designed guarantee success fusion. Both qualitative quantitative experimental results show that approach achieves better performance compared with state-of-the-art methods public databases quality metrics.",
+        "source": "Proceedings of the 30th ACM International Conference on Multimedia"
+    },
+    {
+        "title": "Not All Attention Is All You Need",
+        "year": 2021,
+        "abstract": "Beyond the success story of pre-trained language models (PrLMs) in recent natural processing, they are susceptible to over-fitting due unusual large model size. To this end, dropout serves as a therapy. However, existing methods like random-based, knowledge-based and search-based more general but less effective onto self-attention based models, which broadly chosen fundamental architecture PrLMs. In paper, we propose novel method named AttendOut let empowered PrLMs capable robust task-specific tuning. We demonstrate that state-of-the-art with elaborate training design may achieve much stronger results. verify universality our approach on extensive processing tasks.",
+        "source": "arXiv (Cornell University)"
+    },
+    {
+        "title": "Equity‐premium prediction: Attention is all you need",
+        "year": 2022,
+        "abstract": "Summary Predictions of stock returns are greatly improved relative to low‐dimensional forecasting regressions when the forecasts based on estimated factor large data sets, also known as diffusion index (DI) model. However, applied text data, DI models do not perform well. This paper shows that by simply using in a model does improve equity‐premium over naive historical‐average model, but substantial gains obtained one selects most predictive words before computing factors and allows dictionary be updated time.",
+        "source": "Journal of Applied Econometrics"
+    },
+    {
+        "title": "How Attentive are Graph Attention Networks?",
+        "year": 2021,
+        "abstract": "Graph Attention Networks (GATs) are one of the most popular GNN architectures and considered as state-of-the-art architecture for representation learning with graphs. In GAT, every node attends to its neighbors given own query. However, in this paper we show that GAT computes a very limited kind attention: ranking attention scores is unconditioned on query node. We formally define restricted static distinguish it from strictly more expressive dynamic attention. Because GATs use mechanism, there simple graph problems cannot express: controlled problem, hinders even fitting training data. To remove limitation, introduce fix by modifying order operations propose GATv2: variant than GAT. perform an extensive evaluation GATv2 outperforms across 11 OGB other benchmarks while match their parametric costs. Our code available at https://github.com/tech-srl/how_attentive_are_gats . part PyTorch Geometric library, Deep Library, TensorFlow library.",
+        "source": "arXiv (Cornell University)"
+    },
+    {
+        "title": "Relation-Aware Graph Attention Network for Visual Question Answering",
+        "year": 2019,
+        "abstract": "In order to answer semantically-complicated questions about an image, a Visual Question Answering (VQA) model needs fully understand the visual scene in especially interactive dynamics between different objects. We propose Relation-aware Graph Attention Network (ReGAT), which encodes each image into graph and models multi-type inter-object relations via attention mechanism, learn question-adaptive relation representations. Two types of object are explored: (i) Explicit Relations that represent geometric positions semantic interactions objects; (ii) Implicit capture hidden regions. Experiments demonstrate ReGAT outperforms prior state-of-the-art approaches on both VQA 2.0 VQA-CP v2 datasets. further show is compatible existing architectures, can be used as generic encoder boost performance for VQA.",
+        "source": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)"
+    },
+    {
+        "title": "Social-BiGAT: Multimodal Trajectory Forecasting using Bicycle-GAN and Graph Attention Networks",
+        "year": 2019,
+        "abstract": "Predicting the future trajectories of multiple interacting agents in a scene has become an increasingly important problem for many different applications ranging from control autonomous vehicles and social robots to security surveillance. This is compounded by presence interactions between humans their physical with scene. While existing literature explored some these cues, they mainly ignored multimodal nature each human's trajectory. In this paper, we present Social-BiGAT, graph-based generative adversarial network that generates realistic, trajectory predictions better modelling pedestrians Our method based on graph attention (GAT) learns reliable feature representations encode scene, recurrent encoder-decoder architecture trained adversarially predict, features, humans' paths. We explicitly account prediction forming reversible transformation its latent noise vector, as Bicycle-GAN. show our framework achieves state-of-the-art performance comparing it several baselines forecasting benchmarks.",
+        "source": "arXiv (Cornell University)"
+    },
+    {
+        "title": "Weighted Feature Fusion of Convolutional Neural Network and Graph Attention Network for Hyperspectral Image Classification",
+        "year": 2022,
+        "abstract": "Convolutional Neural Networks (CNN) and Graph (GNN), such as Attention (GAT), are two classic neural network models, which applied to the processing of grid data graph respectively. They have achieved outstanding performance in hyperspectral images (HSIs) classification field, attracted great interest. However, CNN has been facing problem small samples GNN pay a huge computational cost, restrict models. In this paper, we propose Weighted Feature Fusion Network (WFCG) for HSI classification, by using characteristics superpixel-based GAT pixel-based CNN, proved be complementary. We first establish with help encoder decoder modules. Then combined attention mechanism construct CNN. Finally, features weighted fusion Rigorous experiments on three real-world sets show WFCG can fully explore high-dimensional feature HSI, obtain competitive results compared other state-of-the art methods.",
+        "source": "IEEE Transactions on Image Processing"
+    },
+    {
+        "title": "Deep Recurrent Models with Fast-Forward Connections for Neural Machine Translation",
+        "year": 2016,
+        "abstract": "Neural machine translation (NMT) aims at solving (MT) problems using neural networks and has exhibited promising results in recent years. However, most of the existing NMT models are shallow there is still a performance gap between single model best conventional MT system. In this work, we introduce new type linear connections, named fast-forward based on deep Long Short-Term Memory (LSTM) networks, an interleaved bi-directional architecture for stacking LSTM layers. Fast-forward connections play essential role propagating gradients building topology depth 16. On WMT’14 English-to-French task, achieve BLEU=37.7 with attention model, which outperforms corresponding by 6.2 BLEU points. This first time that achieves state-of-the-art 0.7 We can BLEU=36.3 even without mechanism. After special handling unknown words ensembling, obtain score reported to date task BLEU=40.4. Our also validated more difficult English-to-German task.",
+        "source": "Transactions of the Association for Computational Linguistics"
+    },
+    {
+        "title": "SemEval-2021 Task 11: NLPContributionGraph - Structuring Scholarly NLP Contributions for a Research Knowledge Graph",
+        "year": 2021,
+        "abstract": "There is currently a gap between the natural language expression of scholarly publications and their structured semantic content modeling to enable intelligent search. With volume research growing exponentially every year, search feature operating over semantically compelling. The SemEval-2021 Shared Task NLPContributionGraph (a.k.a. ‘the NCG task’) tasks participants develop automated systems that structure contributions from NLP articles in English language. Being first-of-its-kind SemEval series, task released data at three levels information granularity, i.e. sentence-level, phrase-level, phrases organized as triples toward Knowledge Graph (KG) building. sentence-level annotations comprised few sentences about article’s contribution. phrase-level were scientific term predicate contribution sentences. Finally, constituted overview KG. For Task, participating then expected automatically classify sentences, extract terms relations organize them KG triples. Overall, drew strong participation demographic seven teams 27 participants. best end-to-end system classified 57.27% F1, 46.41% 22.28% F1. While absolute performance generate remains low, conclusion article, difficulty producing such consequence it highlighted.",
+        "source": "Proceedings of the 16th International Workshop on Semantic Evaluation (SemEval-2022)"
+    },
+    {
+        "title": "Chatterbot implementation using Transfer Learning and LSTM Encoder-Decoder Architecture",
+        "year": 2020,
+        "abstract": "The goal of this project is to develop a chatbot using deep learning models.Chatterbot an existing research area whose main appear as human possible and most the current models(which use RNN related sequential models) are unable achieve task relate over long dependencies.Adding onto that , NLP tasks require lot data which can be hard collect for smaller projects/tasks inspired try out sequence model LSTM.For we have used movie dialog corpus 220,579 conversation exchanges among about 50,000 conversational only training our since on more requires high computation power than have.",
+        "source": "International Journal of Emerging Trends in Engineering Research"
+    },
+    {
+        "title": "Memory-Enhanced Transformer for Representation Learning on Temporal Heterogeneous Graphs",
+        "year": 2023,
+        "abstract": "Abstract Temporal heterogeneous graphs can model lots of complex systems in the real world, such as social networks and e-commerce applications, which are naturally time-varying heterogeneous. As most existing graph representation learning methods cannot efficiently handle both these characteristics, we propose a Transformer-like model, named THAN, to learn low-dimensional node embeddings preserving topological structure features, semantics, dynamic patterns temporal graphs, simultaneously. Specifically, THAN first samples neighbors with constraints projects features into same vector space, then encodes time information aggregates neighborhood influence different weights via type-aware self-attention. To capture long-term dependencies evolutionary patterns, design an optional memory module for storing evolving representations. Experiments on three real-world datasets demonstrate that outperforms state-of-the-arts terms effectiveness respect link prediction task.",
+        "source": "Data Science and Engineering"
+    },
+    {
+        "title": "An Empirical Study on Neural Keyphrase Generation",
+        "year": 2021,
+        "abstract": "Rui Meng, Xingdi Yuan, Tong Wang, Sanqiang Zhao, Adam Trischler, Daqing He. Proceedings of the 2021 Conference North American Chapter Association for Computational Linguistics: Human Language Technologies. 2021.",
+        "source": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies"
+    },
+    {
+        "title": "J. Daniel Subías - In-the-wild Material Appearance Editing using Perceptual Attributes",
+        "year": 2023,
+        "abstract": "We rely on an encoder-decoder architecture G that encodes the image x, and manipulates latent space z together with target attribute att t to generate edited y.We use skip connections STU cells, a variant of GRU [1,2], which allow architectures keep relevant information input in output when manipulating z.High-level overview our framework.Our generator is composed encoder enc decoder dec .It capable editing x according y.",
+        "source": "Jornadas de jóvenes investigadores del I3A"
+    },
+    {
+        "title": "Spatio-Temporal Residual Graph Convolutional Network for Short-Term Traffic Flow Prediction",
+        "year": 2023,
+        "abstract": "Accurate spatio-temporal traffic flow prediction is a significant research direction in the intelligent transportation system. Current methods have limitations feature extraction, and results poor performance. In this paper, short-term model based on Spatio-Temporal Residual Graph Convolutional Network (STRGCN) proposed to solve problem of accuracy extracting spatial temporal correlation task. Firstly, Deep Full (DFRGCN) module used learn correlation. Secondly, Bidirectional Gated Recurrent Unit Attention mechanism (ABi-GRU) accurately obtain dependence data. Finally, experimental show that STRGCN achieves better performance stability three publicly available datasets compared baseline methods.",
+        "source": "IEEE Access"
+    },
+    {
+        "title": "Predicting Urban Tourism Flow with Tourism Digital Footprints Based on Deep Learning",
+        "year": 2023,
+        "abstract": "Tourism flow is not only the manifestation of tourists' special displacement change, but also an important driving mode regional connection.It has been considered as one significantly topics in many applications.The existing research on tourism prediction based tourist number or statistical model in-depth enough ignores nonlinearity and complexity flow.In this paper, taking Nanjing example, we propose a method urban deep learning methods using travel diaries domestic tourists.Our proposed can extract spatio-temporal dependence relationship further forecast to attractions for every day year time period day.Experimental results show that our slightly better than other benchmark models terms accuracy, especially predicting seasonal trends.The practical significance preventing tourists unnecessary crowding saving lot queuing time.",
+        "source": "KSII Transactions on Internet and Information Systems"
+    },
+    {
+        "title": "交通理論に基づいた深層学習による渋滞長予測",
+        "year": 2024,
+        "abstract": "Intelligent Transport Systems (ITS) play an important role in achieving smooth and safe travel on urban road networks. ITS provide software-based traffic management based prediction, so they can't manage properly without accurate prediction. Recently, spatio-temporal graph neural networks (STGNNs) have achieved significant improvements prediction by taking into account spatial temporal dependencies data. However, although the length of congestion queues is one most statistics because it can be used for proactive signal control information providing, has not been a target existing studies. In addition, relationships between multimodal variables ignored. Moreover, due to impact real world, tend prefer explainable methods over black-box methods. this study, we propose Queueing-theory-based Neural Network (QTNN) queue QTNN combines data-driven STGNN with queueing-theory-based engineering domain knowledge make predictions explainable. Our experiments using real-world data showed that outperformed baseline methods, including state-of-the-art STGNNs, 12.6% 9.9% RMSE MAE, respectively.",
+        "source": "Transactions of the Japanese Society for Artificial Intelligence"
+    }
+]

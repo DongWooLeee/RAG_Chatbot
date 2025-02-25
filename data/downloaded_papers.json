@@ -1,0 +1,206 @@
+[
+    {
+        "title": "Tsmixer: Lightweight mlp-mixer model for multivariate time series forecasting",
+        "pdf_path": "data/pdf/1711.01667v4.pdf"
+    },
+    {
+        "title": "Are transformers effective for time series forecasting?",
+        "pdf_path": "data/pdf/2108.01393v1.pdf"
+    },
+    {
+        "title": "Time series analysis: forecasting and control",
+        "pdf_path": "data/pdf/1903.02787v2.pdf"
+    },
+    {
+        "title": "Crossformer: Transformer utilizing cross-dimension dependency for multivariate time series forecasting",
+        "pdf_path": "data/pdf/2306.02326v1.pdf"
+    },
+    {
+        "title": "Stock prediction based on technical indicators using deep learning model.",
+        "pdf_path": "data/pdf/2405.10584v1.pdf"
+    },
+    {
+        "title": "Enhancing the locality and breaking the memory bottleneck of transformer on time series forecasting",
+        "pdf_path": "data/pdf/1907.00235v3.pdf"
+    },
+    {
+        "title": "Informer: Beyond efficient transformer for long sequence time-series forecasting",
+        "pdf_path": "data/pdf/2410.03805v2.pdf"
+    },
+    {
+        "title": "Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting",
+        "pdf_path": "data/pdf/2408.03872v1.pdf"
+    },
+    {
+        "title": "Pyraformer: Low-complexity pyramidal attention for long-range time series modeling and forecasting",
+        "pdf_path": "data/pdf/2411.04554v1.pdf"
+    },
+    {
+        "title": "Swin transformer: Hierarchical vision transformer using shifted windows",
+        "pdf_path": "data/pdf/2306.13776v1.pdf"
+    },
+    {
+        "title": "Fedformer: Frequency enhanced decomposed transformer for long-term series forecasting",
+        "pdf_path": "data/pdf/2412.12227v1.pdf"
+    },
+    {
+        "title": "Preformer: predictive transformer with multi-scale segment-wise correlations for long-term time series forecasting",
+        "pdf_path": "data/pdf/2410.04803v3.pdf"
+    },
+    {
+        "title": "A time series is worth 64 words: Long-term forecasting with transformers",
+        "pdf_path": "data/pdf/2211.14730v2.pdf"
+    },
+    {
+        "title": "itransformer: Inverted transformers are effective for time series forecasting",
+        "pdf_path": "data/pdf/2202.01381v2.pdf"
+    },
+    {
+        "title": "The capacity and robustness trade-off: Revisiting the channel independent strategy for multivariate time series forecasting",
+        "pdf_path": "data/pdf/2304.05206v1.pdf"
+    },
+    {
+        "title": "Temporal and heterogeneous graph neural network for financial time series prediction",
+        "pdf_path": "data/pdf/2305.08740v1.pdf"
+    },
+    {
+        "title": "Multilayer feedforward networks are universal approximators",
+        "pdf_path": "data/pdf/1904.06619v1.pdf"
+    },
+    {
+        "title": "Long Short-term Memory",
+        "pdf_path": "data/pdf/2103.15232v1.pdf"
+    },
+    {
+        "title": "Attention is all you need",
+        "pdf_path": "data/pdf/2407.15516v1.pdf"
+    },
+    {
+        "title": "Gaussian error linear units (gelus)",
+        "pdf_path": "data/pdf/1606.08415v5.pdf"
+    },
+    {
+        "title": "Graph attention networks",
+        "pdf_path": "data/pdf/2304.11533v1.pdf"
+    },
+    {
+        "title": "ImputeFormer: Low rankness-induced transformers for generalizable spatiotemporal imputation",
+        "pdf_path": "data/pdf/2312.01728v3.pdf"
+    },
+    {
+        "title": "Learning phrase representations using RNN encoder-decoder for statistical machine translation",
+        "pdf_path": "data/pdf/1406.1078v3.pdf"
+    },
+    {
+        "title": "Spatio-temporal graph convolutional networks: A deep learning framework for traffic forecasting",
+        "pdf_path": "data/pdf/1802.07007v3.pdf"
+    },
+    {
+        "title": "MASTER: Market-Guided Stock Transformer for Stock Price Forecasting",
+        "pdf_path": "data/pdf/2312.15235v1.pdf"
+    },
+    {
+        "title": "Correlation networks: Interdisciplinary approaches beyond thresholding",
+        "pdf_path": "data/pdf/2311.09536v2.pdf"
+    },
+    {
+        "title": "Connecting the dots: Multivariate time series forecasting with graph neural networks",
+        "pdf_path": "data/pdf/2311.06190v1.pdf"
+    },
+    {
+        "title": "Double-Path Adaptive-correlation Spatial-Temporal Inverted Transformer for Stock Time Series Forecasting",
+        "pdf_path": "data/pdf/2409.15662v1.pdf"
+    },
+    {
+        "title": "Bimodal characteristic returns and predictability enhancement via machine learning",
+        "pdf_path": "data/pdf/2309.04478v1.pdf"
+    },
+    {
+        "title": "A Machine Learning Approach: Enhancing the Predictive Performance of Pharmaceutical Stock Price Movement during COVID",
+        "pdf_path": "data/pdf/2007.02673v1.pdf"
+    },
+    {
+        "title": "Forecasting stock prices from the limit order book using convolutional neural networks",
+        "pdf_path": "data/pdf/1810.10845v1.pdf"
+    },
+    {
+        "title": "Stock price prediction using attention-based multi-input LSTM",
+        "pdf_path": "data/pdf/1909.12227v1.pdf"
+    },
+    {
+        "title": "Enhancing stock movement prediction with adversarial training",
+        "pdf_path": "data/pdf/1810.09936v2.pdf"
+    },
+    {
+        "title": "A stock closing price prediction model based on CNN-BiSLSTM",
+        "pdf_path": "data/pdf/2310.03775v1.pdf"
+    },
+    {
+        "title": "Modeling the stock relation with graph network for overnight stock movement prediction",
+        "pdf_path": "data/pdf/2203.11091v2.pdf"
+    },
+    {
+        "title": "Stock selection via spatiotemporal hypergraph attention network: A learning to rank approach",
+        "pdf_path": "data/pdf/2210.15925v1.pdf"
+    },
+    {
+        "title": "Efficient integration of multi-order dynamics and internal dynamics in stock movement prediction",
+        "pdf_path": "data/pdf/2211.07400v2.pdf"
+    },
+    {
+        "title": "Mlp-mixer: An all-mlp architecture for vision",
+        "pdf_path": "data/pdf/2308.11421v1.pdf"
+    },
+    {
+        "title": "A decoder-only foundation model for time-series forecasting",
+        "pdf_path": "data/pdf/1408.0087v1.pdf"
+    },
+    {
+        "title": "A hybrid model integrating deep learning with investor sentiment analysis for stock price prediction",
+        "pdf_path": "data/pdf/2405.10584v1.pdf"
+    },
+    {
+        "title": "Decision support system for stock trading using multiple indicators decision tree",
+        "pdf_path": "data/pdf/2405.13959v1.pdf"
+    },
+    {
+        "title": "Enhanced stock price forecasting through a regularized ensemble framework with graph convolutional networks",
+        "pdf_path": "data/pdf/1909.12227v1.pdf"
+    },
+    {
+        "title": "Reversible instance normalization for accurate time-series forecasting against distribution shift",
+        "pdf_path": "data/pdf/2401.16777v2.pdf"
+    },
+    {
+        "title": "The behavior of stock-market prices",
+        "pdf_path": "data/pdf/1710.03205v1.pdf"
+    },
+    {
+        "title": "Stock return predictability and variance risk premia: Statistical inference and international evidence",
+        "pdf_path": "data/pdf/1911.02194v1.pdf"
+    },
+    {
+        "title": "Efficiently inefficient: how smart money invests and market prices are determined",
+        "pdf_path": "data/pdf/1912.13110v1.pdf"
+    },
+    {
+        "title": "Temporal relational ranking for stock prediction",
+        "pdf_path": "data/pdf/1809.09441v2.pdf"
+    },
+    {
+        "title": "A LSTM-based method for stock returns prediction: A case study of China stock market",
+        "pdf_path": "data/pdf/1907.10306v1.pdf"
+    },
+    {
+        "title": "Risk guarantee prediction in networked-loans",
+        "pdf_path": "data/pdf/2205.01593v2.pdf"
+    },
+    {
+        "title": "(Re-) Imag (in) ing price trends",
+        "pdf_path": "data/pdf/1704.02446v1.pdf"
+    },
+    {
+        "title": "Stock price prediction using the ARIMA model",
+        "pdf_path": "data/pdf/1808.01560v5.pdf"
+    }
+]
